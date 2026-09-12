@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "aliya-expo",
+    "name": "ALIYA — Notes & Diary",
     "slug": "aliya-expo",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -18,7 +18,15 @@
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "name": "ALIYA — Notes & Diary",
+      "shortName": "ALIYA",
+      "description": "your little space to write, create & remember ♡",
+      "display": "standalone",
+      "startUrl": "/aliya-app/",
+      "scope": "/aliya-app/",
+      "themeColor": "#F7D6E0",
+      "backgroundColor": "#FFF9F3"
     },
     "plugins": [
       "expo-sharing"

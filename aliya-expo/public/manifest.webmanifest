@@ -1,0 +1,19 @@
+{
+  "name": "ALIYA — Notes & Diary",
+  "short_name": "ALIYA",
+  "description": "your little space to write, create & remember ♡",
+  "display": "standalone",
+  "start_url": "/aliya-app/",
+  "scope": "/aliya-app/",
+  "theme_color": "#F7D6E0",
+  "background_color": "#FFF9F3",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/aliya-app/assets/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

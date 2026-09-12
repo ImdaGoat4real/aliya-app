@@ -34,6 +34,8 @@ jobs:
 
       - name: Build Expo web export
         working-directory: aliya-expo
+        # These are the public Expo client variables ALIYA reads at build time.
+        # Do not add a Supabase service-role or secret key here; only the public URL and anon key belong in this web export.
         env:
           EXPO_PUBLIC_SUPABASE_URL: ${{ secrets.EXPO_PUBLIC_SUPABASE_URL }}
           EXPO_PUBLIC_SUPABASE_ANON_KEY: ${{ secrets.EXPO_PUBLIC_SUPABASE_ANON_KEY }}

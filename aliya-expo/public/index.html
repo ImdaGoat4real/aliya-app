@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="your little space to write, create & remember ♡" />
+  <meta name="theme-color" content="#F7D6E0" />
+  <meta name="background-color" content="#FFF9F3" />
+  <title>ALIYA — Notes & Diary</title>
+  <link rel="manifest" href="/aliya-app/manifest.webmanifest" />
+  <link rel="icon" href="/aliya-app/favicon.ico" />
+</head>
+<body>
+  <div id="root"></div>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/aliya-app/sw.js', { scope: '/aliya-app/' })
+          .catch(function (error) {
+            console.log('ALIYA PWA service worker registration failed:', error);
+          });
+      });
+    }
+  </script>
+</body>
+</html>
